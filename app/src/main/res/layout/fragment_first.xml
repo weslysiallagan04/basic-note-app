@@ -8,18 +8,18 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:padding="20dp">
 
-        <Button
-            android:id="@+id/button_first"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/next"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+<!--        <Button-->
+<!--            android:id="@+id/button_first"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="@string/next"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,6 +46,7 @@
                         android:text="Tanggal"
                         android:drawableLeft="@drawable/baseline_date_range_24"
                         android:textSize="20sp"
+                        android:id="@+id/tx_date"
                         />
 
                     <TextView
@@ -53,14 +54,26 @@
                         android:layout_height="wrap_content"
                         android:text="Kegiatan"
                         android:textSize="20sp"
-                        android:drawableLeft="@drawable/baseline_access_alarm_24"/>
+                        android:drawableLeft="@drawable/baseline_access_alarm_24"
+                        android:id="@+id/tx_activity"
+                        />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Alun-alun"
                         android:textSize="20sp"
-                        android:drawableLeft="@drawable/baseline_add_location_24"/>
+                        android:drawableLeft="@drawable/baseline_add_location_24"
+                        android:id="@+id/tx_location"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="089123999456"
+                        android:textSize="20sp"
+                        android:drawableLeft="@drawable/baseline_add_call_24"
+                        android:id="@+id/tx_callnumber"/>
 
 
                 </LinearLayout>
